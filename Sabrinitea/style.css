@@ -1,0 +1,42 @@
+.logo {
+    max-width:30%;
+    margin: auto;
+    display: block;
+}
+
+.ube-container {
+    position: relative;
+}
+
+.ube-image {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    z-index: 2;
+    display: block;
+    transition: transform 0.3s ease;
+  
+}
+
+.ube-image:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.ube-label {
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 167.656px;
+    margin: auto;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color:purple;
+    
+  
+    
+}
