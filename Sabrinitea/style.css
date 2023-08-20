@@ -1,28 +1,40 @@
 .logo {
-    max-width:30%;
+    max-width:40%;
     margin: auto;
     display: block;
+    margin: 0;
 }
 
-.ube-container {
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.milktea-container {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
-.ube-image {
-    width: 200px;
+.milktea-flavors {
+    width: 150px;
     height: auto;
     margin: auto;
-    z-index: 2;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    z-index: 1;
     display: block;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 1s ease-in-out;
+    border-radius: 10px;
+    position: relative;
   
 }
 
-.ube-image:hover {
-    transform: scale(1.1);
+.milktea-flavors:hover {
+    transform: scale(1.5);
+    z-index: 2;
 }
-
-
 
 
 .ube-label {
