@@ -1,46 +1,60 @@
-h1 {
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 4px grey;
-    font-size: 50px;
-    font-style: "calibri";
-}
 
 header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
-
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    background-color: rgb(0, 65, 29);
+    color: white;
+    border: 0px;
 }
 
 .header-name {
     align-self: flex-start;
     display: flex;
+    font-size: 25px;
+    margin-left: 20px;
 }
 
-li {
-    list-style-type: disc;
-    list-style: none;
-    display: inline;
+nav {
+    display: flex;
     text-align: right;
+    align-items: center;
+    margin-right: 20px;
 }
 
-a:-webkit-any-link {
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+a:hover {
+    color:rgb(3, 110, 114);
     cursor: pointer;
 }
 
-.logo {
-    max-width:30%;
-    margin: auto;
-    display: block;
-    margin: 0;
-}
 
 .logo-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 350px;
+    max-height: 300px;
+    overflow: hidden;
 
+}
+
+.logo-container img {
+    max-width: 50%;
+    object-fit: cover;
+
+}
+
+div h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: grey
 }
 
 .milktea-container {
@@ -49,11 +63,14 @@ a:-webkit-any-link {
     gap: 10px;
     justify-content: space-around;
     align-content: center;
-    flex-direction: column;
+    flex-direction: row;
     background-image: url(images/bg.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    background-color: rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+    min-height: 800px;
     
 }
 
@@ -63,32 +80,49 @@ a:-webkit-any-link {
     gap: 10px;
     justify-content: space-around;
     align-content: center;
-    flex-direction: column;
+    flex-direction: row;
     background-image: url(images/bg2.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    margin-bottom: 20px;
+    min-height: 800px;
+}
+
+.milktea-container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    background-image: url(images/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 20px;
+    min-height: 800px;
 
 }
 
 .milktea-flavors {
-    width: 150px;
+    width: 300px;
     height: auto;
     z-index: 1;
     display: block;
-    transition: transform 0.3s ease, opacity 1s ease-in-out;
+    transition: transform 0.3s ease, opacity 0.5s ease-in-out;
     border-radius: 30px;
     position: relative;
-    border-style: solid;
-    border-color: white;
-    border-width: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+   
   
 }
 
 .milktea-flavors:hover {
     transform: scale(1.2);
+    opacity: 1.0;
     z-index: 2;
 }
 
