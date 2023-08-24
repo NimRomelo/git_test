@@ -14,6 +14,7 @@ header {
     position: sticky;
     top: 0px;
     z-index: 2;
+    
 }
 
 .header-name {
@@ -65,6 +66,19 @@ div h1 {
     color: grey
 }
 
+.business-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 0px;
+}
+
+
 .milktea-container {
     display: flex;
     flex-wrap: wrap;
@@ -72,66 +86,62 @@ div h1 {
     justify-content: space-around;
     align-content: center;
     flex-direction: row;
+    margin-bottom: 20px;
+    min-height: 800px;
+    padding: 30px;
+    
+}
+
+.first-background {
+    background-color: rgba(0, 0, 0, 0.8);
     background-image: url(images/bg.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-color: rgba(255,255,255,0.5);
-    margin-bottom: 20px;
-    min-height: 800px;
-    
+    background-blend-mode: multiply;
 }
 
-.milktea-container-2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-around;
-    align-content: center;
-    flex-direction: row;
+.second-background {
+    background-color: rgba(0, 0, 0, 0.8);
     background-image: url(images/bg2.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom: 20px;
-    min-height: 800px;
+    background-blend-mode: multiply;
 }
 
-.milktea-container-3 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-around;
-    align-content: center;
-    flex-direction: row;
+.third-background {
+    background-color: rgba(0, 0, 0, 0.8);
     background-image: url(images/bg4.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom: 20px;
-    min-height: 800px;
+    background-blend-mode: multiply;
 
 }
 
-.milktea-flavors {
+.milktea-container img {
     width: 300px;
     height: auto;
     z-index: 1;
     display: block;
-    transition: transform 0.3s ease, opacity 0.5s ease-in-out;
+    transition: transform 0.3s ease, opacity 0.5s ease-in-out, filter 0.3s ease;
     border-radius: 30px;
     position: relative;
     margin: 50px;
     border: 2px solid white;
     margin-bottom: 5px;
+    filter: grayscale(100%);
    
   
 }
 
-.milktea-flavors:hover {
+.milktea-container img:hover {
     transform: scale(1.05);
+    filter: grayscale(0%);
     opacity: 1.0;
     z-index: 1;
+
 }
 
 
@@ -140,22 +150,29 @@ div h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(4, 59, 18);
+    background-color: rgb(255, 255, 255);
     width: 280px;
     height: 30px;
     border-radius: 10px;
     margin-top: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color:rgb(255, 255, 255)
+    color:rgb(63, 63, 63)
 }
  
 .button-design {
-    background-color: rgb(1, 128, 128);
+    background-color: rgb(10, 238, 238);
     border: 2px solid white;
     margin-top: 5px;
+    transition: transform 0.3s ease;
+    height: 50px;
+    font-size: 20px;
 }
 
 .button-design:hover {
     background-color: rgb(22, 161, 161);
+}
+
+.button-design:active {
+    transform: scale(1.1);
 }
